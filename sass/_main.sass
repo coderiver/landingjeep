@@ -7,16 +7,6 @@
 	&__bl
 		padding-top: 20px
 		+clr
-	&__address
-		font-size: 0
-		li
-			display: inline-block
-			padding: 0 20px
-			font-size: 17px
-			vertical-align: top
-			text-shadow: 0 0 4px rgba(0, 0, 0, 0.5)
-			&:first-child
-				padding-left: 0
 	&__logo
 		float: right
 	&__ttl
@@ -27,7 +17,7 @@
 		font-size: 30px
 	+rmin(1300)
 		background-position-y: 65%
-	+r(660)
+	+r(730)
 		&__logo
 			display: block
 			float: none
@@ -35,13 +25,23 @@
 			img
 				display: block
 				margin: 0 auto
-		&__address
-			text-align: center
-			li
-				margin-bottom: 20px
-				&:first-child
-					padding-left: 20px
 
+.address
+	font-size: 0
+	li
+		display: inline-block
+		padding: 0 20px
+		font-size: 17px
+		vertical-align: top
+		text-shadow: 0 0 4px rgba(0, 0, 0, 0.5)
+		&:first-child
+			padding-left: 0
+	+r(730)
+		text-align: center
+		li
+			margin-bottom: 20px
+			&:first-child
+				padding-left: 20px
 
 .main
 	margin: -100px 0 70px
@@ -81,7 +81,7 @@
 		width: 100%
 		max-width: 367px
 		margin: 8px 25px 20px 0
-	+r(660)
+	+r(730)
 		margin: 0 0 20px
 		&__img
 			float: none
@@ -92,7 +92,7 @@
 			text-align: center
 		.special
 			display: block
-			max-width: 250px
+			max-width: 300px
 			margin: 20px auto 28px
 
 
@@ -125,7 +125,7 @@
 	top: 10px
 	right: 0
 	+s(expo)
-	+r(660)
+	+r(730)
 		position: static
 		display: block
 		margin: 40px auto
@@ -134,12 +134,16 @@
 	position: relative
 	text-align: center
 	+clr
+	&.is-margin
+		margin-top: 40px
 	&__link
 		display: inline-block
 		text-transform: uppercase
 		font-size: 18px
 		color: #FFF
 		+db
+	.address
+		margin-top: 30px
 
 .popupwrap
 	position: fixed
@@ -160,7 +164,7 @@
 
 .popup
 	display: inline-block
-	min-width: 320px
+	min-width: 280px
 	padding: 30px
 	vertical-align: middle
 	white-space: normal
@@ -182,7 +186,6 @@
 		input
 			width: 100%
 			padding: 10px 15px
-			color: #000
 			+placeholder-color(#000)
 	&__btn
 		padding: 15px 40px
@@ -203,3 +206,10 @@
 		span
 			display: inline-block
 			vertical-align: middle
+	+r(730)
+		padding: 30px 10px
+	+r(400)
+		.check
+			span
+				width: 90%
+				text-align: left
