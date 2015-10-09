@@ -1,19 +1,22 @@
 head.ready(function() {
+	$('.js-top').click(function() {
+		$('html,body').animate({ scrollTop: 0 }, 'slow');
+		return false;
+	});
 
-	// $(document).on("click", function(){
-	// 	$(".js-popup").hide();
-	// });
+	$('.js-popup-link').click(function(e) {
+		e.stopPropagation();
+		$('.js-popup').addClass('is-active');
+	});
 
-	// function scrollFixedElements() {
-	//     var scroll_left = $(this).scrollLeft();
-	//     $(".fixed-element").css({
-	//         left: -scroll_left
-	//     });
-	// }
-	// scrollFixedElements();
-	// $(window).scroll(function(){
-	//     scrollFixedElements()
-	// });
+	$('body').click(function() {
+		if ($('.js-popup').hasClass('is-active')) {
+			$('.js-popup').removeClass('is-active');
+		}
+	});
 
-	console.log($('body').html());
+	$('.popup').click(function(e) {
+		e.stopPropagation();
+	});
 });
+

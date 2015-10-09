@@ -1,1 +1,205 @@
-// Normally mainpage styles
+.header
+	min-height: 485px
+	background: url(../img/jeep.jpg) center center no-repeat
+	box-shadow: inset 0px -50px 20px 0px rgba(0, 0, 0, 0.9)
+	+cover
+	+db
+	&__bl
+		padding-top: 20px
+		+clr
+	&__address
+		font-size: 0
+		li
+			display: inline-block
+			padding: 0 20px
+			font-size: 17px
+			vertical-align: top
+			text-shadow: 0 0 4px rgba(0, 0, 0, 0.5)
+			&:first-child
+				padding-left: 0
+	&__logo
+		float: right
+	&__ttl
+		margin-top: 40px
+		text-align: center
+		text-shadow: 0 0 4px rgba(0, 0, 0, 0.75)
+		text-transform: uppercase
+		font-size: 30px
+	+rmin(1300)
+		background-position-y: 65%
+	+r(660)
+		&__logo
+			display: block
+			float: none
+			margin-bottom: 20px
+			img
+				display: block
+				margin: 0 auto
+		&__address
+			text-align: center
+			li
+				margin-bottom: 20px
+				&:first-child
+					padding-left: 20px
+
+
+.main
+	margin: -100px 0 70px
+	&__center
+		text-align: center
+	&__ttl
+		margin-bottom: 25px
+		font-size: 16px
+		text-transform: uppercase
+		+pb
+	&__promo
+		color: #ffc704
+		font-size: 16px
+		text-transform: uppercase
+		+db
+	&__subttl
+		position: relative
+		font-size: 16px
+		text-transform: uppercase
+		letter-spacing: 0.25px
+		+db
+	sub
+		display: inline-block
+		vertical-align: -4px
+	&__auto
+		margin: 30px 0
+		+clr
+		&-ttl
+			text-transform: uppercase
+			font-size: 21px
+			+db
+		&-subttl
+			text-transform: uppercase
+			font-size: 14px
+	&__img
+		float: left
+		width: 100%
+		max-width: 367px
+		margin: 8px 25px 20px 0
+	+r(660)
+		margin: 0 0 20px
+		&__img
+			float: none
+			display: block
+			margin: 0 auto 20px
+		&__auto-ttl,
+		&__auto-subttl
+			text-align: center
+		.special
+			display: block
+			max-width: 250px
+			margin: 20px auto 28px
+
+
+.special
+	display: inline-block
+	min-width: 170px
+	margin: 20px 0 28px
+	padding: 15px
+	font-size: 16px
+	text-transform: uppercase
+	text-align: center
+	border: 2px solid #ffc704
+	cursor: pointer
+	+db
+	+tr(0.4s)
+	&:hover
+		background: #ffc704
+		color: #000
+
+.arr_ico
+	display: block
+	margin: 20px auto
+	+s(arrow)
+	&.is-up
+		margin: 11px auto
+		+s(arrow-up)
+
+.expo-ico
+	position: absolute
+	top: 10px
+	right: 0
+	+s(expo)
+	+r(660)
+		position: static
+		display: block
+		margin: 40px auto
+
+.back
+	position: relative
+	text-align: center
+	+clr
+	&__link
+		display: inline-block
+		text-transform: uppercase
+		font-size: 18px
+		color: #FFF
+		+db
+
+.popupwrap
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	padding: 15px
+	white-space: nowrap
+	background: rgba(#000, 0.5)
+	visibility: hidden
+	opacity: 0
+	+vertical
+	+tr(0.3s)
+	&.is-active
+		opacity: 1
+		visibility: visible
+
+.popup
+	display: inline-block
+	min-width: 320px
+	padding: 30px
+	vertical-align: middle
+	white-space: normal
+	font-size: 14px
+	background: #FFC704
+	color: #000
+	border-radius: 2px
+	h3
+		max-width: 550px
+		margin-bottom: 15px
+		font-size: 25px
+		+box
+		+db
+	&__form
+		label
+			display: block
+			max-width: 400px
+			margin: 15px auto
+		input
+			width: 100%
+			padding: 10px 15px
+			color: #000
+			+placeholder-color(#000)
+	&__btn
+		padding: 15px 40px
+		color: #fff
+		background: #000
+		text-transform: uppercase
+		letter-spacing: 0.1em
+		+db
+		+tr(0.3s)
+		&:hover
+			background: #FFF
+			color: #000
+	.check
+		input
+			width: auto
+			margin-right: 5px
+			vertical-align: middle
+		span
+			display: inline-block
+			vertical-align: middle
