@@ -28,7 +28,7 @@ html { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: 
 @font-face { font-family: DINPro-Light; src: url("fonts/DINPro-Light.eot"); src: url("fonts/DINPro-Light.eot?#iefix") format("embedded-opentype"), url("fonts/DINPro-Light.woff2") format("woff2"), url("fonts/DINPro-Light.woff") format("woff"), url("fonts/DINPro-Light.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: DINPro-Bold; src: url("fonts/DINPro-Bold.eot"); src: url("fonts/DINPro-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/DINPro-Bold.woff2") format("woff2"), url("fonts/DINPro-Bold.woff") format("woff"), url("fonts/DINPro-Bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: proximanova-bold; src: url("fonts/proximanova-bold.eot"); src: url("fonts/proximanova-bold.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-bold.woff2") format("woff2"), url("fonts/proximanova-bold.woff") format("woff"), url("fonts/proximanova-bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-body { font-size: 14px; line-height: 1.4; background: black; color: white; font-family: DINPro-Light, Arial, sans-serif; }
+body { font-size: 14px; line-height: 1.4; background: #000; color: #FFF; font-family: DINPro-Light, Arial, sans-serif; }
 
 .out { min-width: 320px; }
 
@@ -36,12 +36,11 @@ a { text-decoration: none; }
 
 .l-center { max-width: 840px; padding: 0 20px; margin: 0 auto; }
 
-.header { min-height: 485px; background: url(../img/jeep.jpg) center center no-repeat; box-shadow: inset 0px -50px 20px 0px rgba(0, 0, 0, 0.9); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; font-family: DINPro-Bold, Arial, sans-serif; }
-.header__bl { padding-top: 20px; *zoom: 1; }
+.header { min-height: 485px; background: url(../img/jeep.jpg) top center no-repeat; font-family: DINPro-Bold, Arial, sans-serif; }
+.header__bl { padding: 20px 20px 0; *zoom: 1; }
 .header__bl:after { content: " "; display: table; clear: both; }
 .header__logo { float: right; }
 .header__ttl { margin-top: 40px; text-align: center; text-shadow: 0 0 4px rgba(0, 0, 0, 0.75); text-transform: uppercase; font-size: 30px; }
-@media only screen and (min-width: 1300px) { .header { background-position-y: 65%; } }
 @media only screen and (max-width: 730px) { .header__logo { display: block; float: none; margin-bottom: 20px; }
   .header__logo img { display: block; margin: 0 auto; } }
 
@@ -69,7 +68,7 @@ a { text-decoration: none; }
   .main .special { display: block; max-width: 300px; margin: 20px auto 28px; } }
 
 .special { display: inline-block; min-width: 170px; margin: 20px 0 28px; padding: 15px; font-size: 16px; text-transform: uppercase; text-align: center; border: 2px solid #ffc704; cursor: pointer; font-family: DINPro-Bold, Arial, sans-serif; -moz-transition: 0.4s; -o-transition: 0.4s; -webkit-transition: 0.4s; transition: 0.4s; }
-.special:hover { background: #ffc704; color: black; }
+.special:hover { background: #ffc704; color: #000; }
 
 .arr_ico { display: block; margin: 20px auto; background: url('../img/icons-s64c2493b93.png') 0 -22px no-repeat; width: 20px; height: 12px; }
 .arr_ico.is-up { margin: 11px auto; background: url('../img/icons-s64c2493b93.png') 0 0 no-repeat; width: 20px; height: 12px; }
@@ -80,21 +79,21 @@ a { text-decoration: none; }
 .back { position: relative; text-align: center; *zoom: 1; }
 .back:after { content: " "; display: table; clear: both; }
 .back.is-margin { margin-top: 40px; }
-.back__link { display: inline-block; text-transform: uppercase; font-size: 18px; color: white; font-family: DINPro-Bold, Arial, sans-serif; }
+.back__link { display: inline-block; text-transform: uppercase; font-size: 18px; color: #FFF; font-family: DINPro-Bold, Arial, sans-serif; }
 .back .address { margin-top: 30px; }
 
 .popupwrap { position: fixed; top: 0; left: 0; right: 0; bottom: 0; padding: 15px; white-space: nowrap; background: rgba(0, 0, 0, 0.5); visibility: hidden; opacity: 0; text-align: center; font-size: 0; -moz-transition: 0.3s; -o-transition: 0.3s; -webkit-transition: 0.3s; transition: 0.3s; }
 .popupwrap:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 .popupwrap.is-active { opacity: 1; visibility: visible; }
 
-.popup { display: inline-block; min-width: 280px; padding: 30px; vertical-align: middle; white-space: normal; font-size: 14px; background: #ffc704; color: black; border-radius: 2px; }
+.popup { display: inline-block; min-width: 280px; padding: 30px; vertical-align: middle; white-space: normal; font-size: 14px; background: #FFC704; color: #000; border-radius: 2px; }
 .popup h3 { max-width: 550px; margin-bottom: 15px; font-size: 25px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: DINPro-Bold, Arial, sans-serif; }
 .popup__form label { display: block; max-width: 400px; margin: 15px auto; }
 .popup__form input { width: 100%; padding: 10px 15px; }
-.popup__form input:-moz-placeholder, .popup__form input::-moz-placeholder { color: black; opacity: 1; }
-.popup__form input::-webkit-input-placeholder { color: black; }
-.popup__btn { padding: 15px 40px; color: white; background: black; text-transform: uppercase; letter-spacing: 0.1em; font-family: DINPro-Bold, Arial, sans-serif; -moz-transition: 0.3s; -o-transition: 0.3s; -webkit-transition: 0.3s; transition: 0.3s; }
-.popup__btn:hover { background: white; color: black; }
+.popup__form input:-moz-placeholder, .popup__form input::-moz-placeholder { color: #000; opacity: 1; }
+.popup__form input::-webkit-input-placeholder { color: #000; }
+.popup__btn { padding: 15px 40px; color: #fff; background: #000; text-transform: uppercase; letter-spacing: 0.1em; font-family: DINPro-Bold, Arial, sans-serif; -moz-transition: 0.3s; -o-transition: 0.3s; -webkit-transition: 0.3s; transition: 0.3s; }
+.popup__btn:hover { background: #FFF; color: #000; }
 .popup .check input { width: auto; margin-right: 5px; vertical-align: middle; }
 .popup .check span { display: inline-block; vertical-align: middle; }
 @media only screen and (max-width: 730px) { .popup { padding: 30px 10px; } }
