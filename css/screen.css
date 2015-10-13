@@ -36,7 +36,7 @@ a { text-decoration: none; }
 
 .l-center { max-width: 840px; padding: 0 20px; margin: 0 auto; }
 
-.header { min-height: 485px; background: url(../img/jeep.jpg) top center no-repeat; font-family: DINPro-Bold, Arial, sans-serif; }
+.header { min-height: 466px; background: url(../img/main.jpg) top center no-repeat; box-shadow: inset 0px -50px 50px 0px rgba(0, 0, 0, 0.85); font-family: DINPro-Bold, Arial, sans-serif; }
 .header__bl { padding: 20px 20px 0; *zoom: 1; }
 .header__bl:after { content: " "; display: table; clear: both; }
 .header__logo { float: right; }
