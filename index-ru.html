@@ -107,21 +107,21 @@
 <div class="popupwrap js-popup">
 	<div class="popup">
 		<h3>Успейте получить эксклюзивное предложение на эксклюзивный автомобиль!</h3>
-		<form class="popup__form">
+		<form class="popup__form" id="form-welcome">
 			<label>
-				<input type="text" placeholder="Фамилия">
+				<input type="text" name="surname" placeholder="Фамилия">
 			</label>
 			<label>
-				<input type="text" placeholder="Имя">
+				<input type="text" name="name" placeholder="Имя" data-validation="required" data-validation-error-msg="Обязательное поле">
 			</label>
 			<label>
-				<input type="tel" placeholder="Телефон">
+				<input type="tel" name="phone" placeholder="Телефон" data-validation="required" data-validation-error-msg="Обязательное поле">
 			</label>
 			<label>
-				<input type="email" placeholder="Электронная почта">
+				<input type="email" name="email" placeholder="Электронная почта" data-validation="required" data-validation-error-msg="Обязательное поле">
 			</label>
 			<label class="check">
-				<input type="checkbox"><span>Согласен с обработкой персональных данных</span>
+				<input type="checkbox" data-validation="required" data-validation-error-msg="Обязательное поле"><span>Согласен с обработкой персональных данных</span>
 			</label>
 			<button type='send' class="popup__btn">Отправить</button>
 		</form>

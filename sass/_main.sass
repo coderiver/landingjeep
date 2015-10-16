@@ -180,9 +180,16 @@
 			display: block
 			max-width: 400px
 			margin: 15px auto
+			&.has-error
+				input
+					border: 1px solid red !important
+				.help-block.form-error
+					display: block
+					color: red
 		input
 			width: 100%
 			padding: 10px 15px
+			border: 1px solid #fff
 			+placeholder-color(#000)
 	&__btn
 		padding: 15px 40px
@@ -195,6 +202,10 @@
 		&:hover
 			background: #FFF
 			color: #000
+		&:disabled
+			color: #fff
+			background: #000
+			cursor: default
 	.check
 		input
 			width: auto

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Jeepp eng</title>
+	<title>Jeep eng</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<!-- theme color for android 5.0 -->
@@ -78,21 +78,21 @@
 <div class="popupwrap js-popup">
 	<div class="popup">
 		<h3>Time to get special offer for exclusive auto!</h3>
-		<form class="popup__form">
+		<form class="popup__form" id="form-welcome">
 			<label>
-				<input type="text" placeholder="Surname">
+				<input type="text" name="surname" placeholder="Surname">
 			</label>
 			<label>
-				<input type="text" placeholder="Name">
+				<input type="text" name="name" placeholder="Name" data-validation="required" data-validation-error-msg="Required field">
 			</label>
 			<label>
-				<input type="tel" placeholder="Phone number">
+				<input type="tel" name="phone" placeholder="Phone number" data-validation="required" data-validation-error-msg="Required field">
 			</label>
 			<label>
-				<input type="email" placeholder="Email">
+				<input type="email" name="email" placeholder="Email" data-validation="required" data-validation-error-msg="Required field">
 			</label>
 			<label class="check">
-				<input type="checkbox"><span>I agree with the processing of personal data</span>
+				<input type="checkbox" data-validation="required" data-validation-error-msg="Required field"><span>I agree with the processing of personal data</span>
 			</label>
 			<button type='send' class="popup__btn">Send</button>
 		</form>
